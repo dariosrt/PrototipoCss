@@ -9,6 +9,8 @@
 
 
 
+
+
 :root{
     --texto-color: #1C1C1C;
     --fondo-color: #FFFFFF;
@@ -162,4 +164,83 @@ button:active{
     background-color: var(--secundary-color);
 
     
+}
+
+
+
+
+@media (max-width: 640px) {
+
+    header {
+        height: 157px;
+        box-shadow: 0 0 6px 3px rgba(0,0,0,0.4);
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        padding-top: 58px;
+        padding-bottom: 114px;
+    }
+
+    #principal-box {
+        width: 54.5vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-width: 2px;
+        padding: 4vh;
+        box-sizing: border-box;
+    }
+
+    .separator-box {
+        flex-direction: column;
+        gap: 40px;
+        margin: 20px;
+    }
+
+    .image-box {
+        width: 46vh;
+        height: 35vh;
+        border: 2px solid black;
+        background-size: contain;
+    }
+    .image-box:first-child{
+        background-image: url(img/HTML-Logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .info-box {
+        width: 46vh;
+        height: 35vh;
+        padding: 10px;
+        border: 2px solid black;
+        text-align: justify;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 16px 0;
+        text-align: center;
+        gap: 8px;
+    }
+
+    footer > :first-child,
+    footer > :last-child {
+        margin: 8px 0;
+    }
+
+    button {
+        width: 180px;
+        height: 38px;
+        border-radius: 6px;
+    }
 }
