@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+:root{
+    --texto-color: #1C1C1C;
+    --fondo-color: #FFFFFF;
+    --primary-color: #6009B0;
+    --secundary-color: #909090;
+    --fondo-alternativo-color: #F3F3F3;
+    --fondo-header-color: #7487FF;
+
+}
+
+
+
+header{
+    background-color: var(--fondo-header-color);
+    width: 100%;
+    height: 96px;
+    box-shadow: 0px 0px 10px 7px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+main{
+    width: 100%;
+    height: 676px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#principal-box{
+    background-image: url(img/granulado.png);
+    width: 1000px;
+    height: 600px;
+    display: grid;
+
+    border: 4px solid var(--secundary-color);
+}
+
+.separator-box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.image-box{
+    width: 350px;
+    height: 250px;
+    background-color: var(--fondo-color);
+
+    border: 2px solid black;
+}
+
+.image-box:first-child{
+    background-image: url(img/HTML-Logo.png);
+    background-size: 225px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image-box:last-child{
+    background-image: url(img/HTML-Codigo.png);
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.info-box{
+    width: 550px;
+    height: 250px;
+    background-color: var(--fondo-color);
+
+    border: 2px solid black;
+
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+
+footer{
+    width: 100%;
+    height: 128px;
+    background-color: var(--texto-color);
+
+    color: var(--fondo-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+
+}
+
+footer > :first-child{
+    margin: 41px;
+}
+footer > :last-child{
+    margin: 38px;
+}
+
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/*  Al no poder poner la tipografía Roboto (bold / semi-bold / black) de figma he hecho unas 
+    plantillas donde tiene la referencia del peso (weight) correspondiente a cada tipo
+
+    600 → Semi-Bold
+    700 → Bold (por defecto
+    900 → Black
+*/
+
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+}
+
+h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    
+}
+
+
+
+button, label{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+button{
+    color: var(--fondo-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+
+    width: 240px;
+    height: 42px;
+}
+
+button:active{
+    background-color: var(--secundary-color);
+
+    
+}
